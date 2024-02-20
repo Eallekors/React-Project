@@ -10,7 +10,7 @@ function Calculator() {
 
     const inputHandler = (event) => {
         let val = event.target.innerText
-        setInput(val)
+        setInput(prevInput => prevInput + val);
         console.log(val);
        
     }
