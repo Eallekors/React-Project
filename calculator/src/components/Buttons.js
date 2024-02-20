@@ -68,7 +68,8 @@ const Buttons = ({ inputHandler, clearInput, backspace, changePlusMinus, calcula
       <button className="btn" onClick={inputHandler}>
         0
       </button>
-      
+      <button className="no"></button>
+      <button className="no"></button>
       <button className="btn exp equal " id="equalbtn" onClick={calculateAns}>
         =
       </button>
