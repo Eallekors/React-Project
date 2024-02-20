@@ -69,7 +69,7 @@ const Buttons = ({ inputHandler, clearInput, backspace, changePlusMinus, calcula
         0
       </button>
       
-      <button className="btn exp " id="equalbtn" onClick={calculateAns}>
+      <button className="btn exp equal " id="equalbtn" onClick={calculateAns}>
         =
       </button>
     </div>

@@ -10,6 +10,7 @@ function Calculator() {
         <>
           <div className="container">
             <div className="main">
+            <Display  />
              <Buttons
               />
             </div>
