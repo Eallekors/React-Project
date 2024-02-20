@@ -10,6 +10,8 @@ function Calculator() {
 
     const inputHandler = (event) => {
         let val = event.target.innerText
+        val = val === 'x' ? '*' : val;
+        val = val === '÷' ? '/' : val;
         setInput(prevInput => prevInput + val);
         console.log(val);
        
@@ -21,6 +23,15 @@ function Calculator() {
     const backspace = () => {
         setInput(prevInput => prevInput.slice(0, -1));
     };
+
+    const calculateAns = () => {
+        try {
+            const result = evaluate(input);
+            setInput(result.toString());
+        } catch (error) {
+            setInput("Error"); 
+        }
+    };
     return (
         <>
           <div className="container">
@@ -30,6 +41,7 @@ function Calculator() {
                 inputHandler={inputHandler}
                 clearInput={clearInput}
                 backspace={backspace}
+                calculateAns={calculateAns}
               />
             </div>
           </div>
