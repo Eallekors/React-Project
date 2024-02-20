@@ -14,6 +14,13 @@ function Calculator() {
         console.log(val);
        
     }
+    const clearInput = () => {
+        setInput("");
+    };
+
+    const backspace = () => {
+        setInput(prevInput => prevInput.slice(0, -1));
+    };
     return (
         <>
           <div className="container">
@@ -21,6 +28,8 @@ function Calculator() {
             <Display  input={input}/>
              <Buttons
                 inputHandler={inputHandler}
+                clearInput={clearInput}
+                backspace={backspace}
               />
             </div>
           </div>
