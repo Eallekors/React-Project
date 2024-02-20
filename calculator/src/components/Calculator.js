@@ -5,13 +5,22 @@ import "./Calculator.css";
 import { evaluate, round } from "mathjs";
 
 function Calculator() {
+    const [input, setInput] = useState("");
 
+
+    const inputHandler = (event) => {
+        let val = event.target.innerText
+        setInput(val)
+        console.log(val);
+       
+    }
     return (
         <>
           <div className="container">
             <div className="main">
-            <Display  />
+            <Display  input={input}/>
              <Buttons
+                inputHandler={inputHandler}
               />
             </div>
           </div>

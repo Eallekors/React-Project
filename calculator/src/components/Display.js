@@ -6,7 +6,13 @@ const Display = ({ input, setInput, answer }) => {
     return (
         <>
           <div className="display">
-            <input />
+            <input  type="text"
+              name="input"
+              className="value"
+              value={input}
+              placeholder="0"
+              maxLength={12}
+              disabled/>
           </div>
         </>
       );
