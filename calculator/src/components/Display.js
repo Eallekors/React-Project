@@ -8,11 +8,14 @@ const Display = ({ input, setInput, answer }) => {
           <div className="display">
             <input  type="text"
               name="input"
-              className="value"
+              className="input"
+              style={{ padding: "29px" }}
               value={input}
               placeholder="0"
               maxLength={12}
-              disabled/>
+              // disabled
+              autoComplete="off"
+              />
           </div>
         </>
       );
