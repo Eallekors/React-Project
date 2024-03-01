@@ -12,6 +12,9 @@ function Calculator() {
         let val = event.target.innerText
         val = val === 'x' ? '*' : val;
         val = val === '÷' ? '/' : val;
+        if (input == 'Error') {
+          setInput("");
+        } 
         setInput(prevInput => prevInput + val);
         console.log(val);
        
