@@ -3,7 +3,7 @@
     flex-direction: column;
     padding: 10px;
     padding-bottom: 20px;
-    background: linear-gradient(90deg, #0c20d4, #8d7bf1 100%);
+    background: linear-gradient(180deg, #c13a1f, #f67d45 100%);
   }
   
   @media (min-width: 800px) {
