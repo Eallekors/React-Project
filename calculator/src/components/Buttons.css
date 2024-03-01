@@ -22,15 +22,15 @@
     height: 50px;
     border-radius: 10px;
     color: white;
-    background-color: #6dd5ed;
+    background-color: #f67d45;
   }
   
   .clr {
-    color: #2630be;
+    color: #c13a1f;
   }
   
   .exp {
-    color: #0906be;
+    color: #c13a1f;
   }
   .no {
     width: 60px;
@@ -60,7 +60,7 @@
   
   @media (min-width: 800px) {
     .btn:hover {
-      background-color: #6dd5ed;
+      background-color: #f67d45;
       color: white;
       transition: background-color 0.3s ease;
       
@@ -68,7 +68,7 @@
   
     .btn:active,
     .btn.touched {
-      background-color: #48b1bf;
+      background-color: #cc6130;
       color: white;
       transition: background-color 0.3s ease;
       
