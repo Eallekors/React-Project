@@ -21,7 +21,7 @@ npm start
 Avage veebilehitsejas aadress http://localhost:3000, et näha kalkulaatorit.
 
 
-## Autor
+## Autorid
 
 - Erki Allekõrs
 - Karl Kivisild
