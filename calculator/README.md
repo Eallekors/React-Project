@@ -17,3 +17,12 @@ See projekt on lihtne kalkulaator, mis on loodud Reacti raamistikul.
 ```bash
 npm install
 npm start
+```
+Avage veebilehitsejas aadress http://localhost:3000, et näha kalkulaatorit.
+
+
+##Autor
+
+- Erki Allekõrs
+- Karl Kivisild
+- Toomas Kaarel Elmet
