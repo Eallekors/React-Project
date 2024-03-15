@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Display from "./Display";
 import Buttons from "./Buttons";
 import "./Calculator.css";
@@ -6,7 +6,25 @@ import { evaluate, round } from "mathjs";
 
 function Calculator() {
     const [input, setInput] = useState("");
-
+    
+    const handleKeyDown = (event) => {
+      const key = event.key;
+      if (!isNaN(key) && key !== " ") {
+          setInput(prevInput => prevInput + key);
+      } else if (key === "+" || key === "-" || key === "*" || key === "/" || key === ".") {
+          setInput(prevInput => prevInput + key);
+      } else if (key === "Enter") {
+          calculateAns();
+      } else if (key === "Backspace") {
+          backspace();
+      }
+  };
+  useEffect(() => {
+      document.addEventListener("keydown", handleKeyDown);
+      return () => {
+          document.removeEventListener("keydown", handleKeyDown);
+      };
+  }, [input]); 
 
     const inputHandler = (event) => {
         let val = event.target.innerText
