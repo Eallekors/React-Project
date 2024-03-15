@@ -42,6 +42,9 @@ function Calculator() {
     };
 
     const backspace = () => {
+        if (input == 'Error') {
+          setInput("");
+        } 
         setInput(prevInput => prevInput.slice(0, -1));
     };
 
