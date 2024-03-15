@@ -7,6 +7,7 @@ See projekt on lihtne kalkulaator, mis on loodud Reacti raamistikul.
 - Lihtne kasutajaliides
 - Võimaldab kasutajal teha lihtsaid arvutusi
 - Reageerib kasutaja sisestatud andmetele reaalajas
+- Võimalus kasutada ka klaviatuuri tehete tegemiseks
 
 ## Kuidas kasutada
 
