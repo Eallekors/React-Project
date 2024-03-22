@@ -17,6 +17,7 @@ See projekt on lihtne kalkulaator, mis on loodud Reacti raamistikul.
 
 ```bash
 npm install
+npm install mathjs
 npm start
 ```
 Avage veebilehitsejas aadress http://localhost:3000, et näha kalkulaatorit.
