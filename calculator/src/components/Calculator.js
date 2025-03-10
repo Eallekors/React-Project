@@ -42,7 +42,7 @@ function Calculator() {
     };
 
     const backspace = () => {
-        if (input == 'Error') {
+        if (input == 'Error' || input == 'Undefined') {
           setInput("");
         } 
         setInput(prevInput => prevInput.slice(0, -1));
@@ -50,7 +50,8 @@ function Calculator() {
 
     const calculateAns = () => {
         try {
-            const result = evaluate(input);
+            let result = evaluate(input);
+            result = result === Infinity ? 'Undefined' : result;
             setInput(result.toString());
         } catch (error) {
             setInput("Error"); 
